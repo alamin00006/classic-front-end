@@ -1,10 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Navber from "./Home/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Login from "./Pages/Authentication/Login";
 import SignUp from "./Pages/Authentication/SignUp";
 import Footer from "./Footer/Footer";
+import Home from "./Home/Home";
+import ProductDetails from "./Pages/ProductDetails/ProductDetails";
+import Navber from "./Home/Navbar/Navbar";
+import AllCard from "./Pages/Card/AllCard";
 
 function App() {
   return (
@@ -16,9 +17,16 @@ function App() {
       >
         <Navber />
       </div>
+
       <Routes>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/singUp" element={<SignUp></SignUp>}></Route>
+        <Route path="/product-page" element={<AllCard></AllCard>}></Route>
+        <Route
+          path="/productDetails/:detailsId"
+          element={<ProductDetails></ProductDetails>}
+        ></Route>
       </Routes>
       <Footer />
     </div>

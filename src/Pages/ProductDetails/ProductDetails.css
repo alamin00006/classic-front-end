@@ -1,0 +1,558 @@
+body {
+  background-color: #f1f2f4 !important;
+}
+.details-page {
+  margin-top: 20px;
+  border-radius: 2px;
+  box-shadow: 6px 8px 6px 6px #ebebeb;
+}
+.details p {
+  font-size: 1rem !important;
+  font-family: "Hind Siliguri", sans-serif !important;
+}
+.details-side-1 {
+  padding: 20px;
+  background-color: #fff;
+}
+.details-side-2 {
+  padding: 20px;
+  background-color: #fff;
+}
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media screen and (max-width: 996px) {
+  .preview {
+    margin-bottom: 20px;
+  }
+}
+
+.preview-pic {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px;
+}
+.preview-thumbnail.nav-tabs li {
+  width: 18%;
+  margin-right: 2.5%;
+}
+.preview-thumbnail.nav-tabs li img {
+  max-width: 100%;
+  display: block;
+}
+.preview-thumbnail.nav-tabs li a {
+  padding: 0;
+  margin: 0;
+}
+.preview-thumbnail.nav-tabs li:last-of-type {
+  margin-right: 0;
+}
+
+.tab-content {
+  overflow: hidden;
+}
+.tab-content img {
+  width: 100%;
+  -webkit-animation-name: opacity;
+  animation-name: opacity;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+.card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.product-title,
+.price,
+.sizes,
+.colors {
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  font-family: "Hind Siliguri", sans-serif !important;
+  font-size: 1rem;
+}
+
+.checked,
+.price span {
+  color: #ff9f1a;
+}
+
+.product-title,
+.rating,
+.product-description,
+.price,
+.vote,
+.sizes {
+  margin-bottom: 15px;
+}
+
+.product-title {
+  margin-top: 0;
+}
+
+.size {
+  margin-right: 10px;
+}
+.size:first-of-type {
+  margin-left: 40px;
+}
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px;
+}
+.color:first-of-type {
+  margin-left: 20px;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.details-pic {
+  margin-left: 25px;
+  width: 85%;
+  height: 350px;
+  border: 1px solid rgb(187, 181, 181);
+  padding: 25px 35px;
+}
+.previous-tk {
+  color: rgb(171, 168, 168);
+  font-size: 25px;
+  text-decoration: line-through;
+  font-weight: 700;
+}
+.present-tk {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 0;
+}
+.save-tk {
+  font-weight: 700;
+  margin-left: 15px;
+  line-height: 0;
+}
+.book-tag {
+  font-weight: 500;
+  line-height: 0;
+}
+.stock-in {
+  font-weight: 500;
+  font-size: 14px;
+  color: red;
+  background-color: rgb(254 226 226);
+}
+.stock-in-icon {
+  width: 22px;
+  margin-right: 10px;
+  color: #33c24d;
+}
+
+.star-icon {
+  width: 12px;
+  margin-right: 3px;
+  color: #ff9900;
+  line-height: 0;
+}
+.add-to-button {
+  background-color: #065644;
+  padding: 0 20px !important;
+  border-radius: 3px !important;
+}
+
+.add-to-button:hover {
+  background-color: #065610;
+}
+
+.add-to-icon1 {
+  width: 30px;
+}
+.add-to-icon {
+  width: 30px;
+  color: #ffffff;
+}
+.add-To-Cart {
+  border: none !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.add-To-Cart a {
+  text-decoration: none !important;
+  color: white;
+}
+.add-To-Cart a:hover {
+  color: white;
+}
+
+.reading-button {
+  border: 1px solid #33c24d !important;
+  border-radius: 3px !important;
+  margin-right: 15px;
+  padding: 15px 20px !important;
+}
+.reading-button:hover {
+  background-color: #33c24d !important;
+  color: white !important;
+}
+.delivery-info {
+  background-color: #f6f6f6;
+  padding: 20px 25px !important;
+}
+.cash-icon {
+  width: 25px;
+  margin-right: 15px;
+}
+.return-icon {
+  width: 25px;
+  margin-right: 15px;
+}
+.delivery-icon {
+  width: 25px;
+  margin-right: 15px;
+}
+.earn-icon {
+  width: 25px;
+  margin-right: 15px;
+}
+.related-slider-1 p,
+h5 {
+  line-height: 1.2;
+}
+.related-slider-1 img {
+  height: 150px;
+}
+.carousel-director {
+  position: absolute !important;
+  top: 160px;
+}
+.carousel-director button {
+  background-color: rgb(155, 155, 155) !important;
+}
+/* Product Summary Section */
+.product-summary-section {
+  border-radius: 2px;
+  box-shadow: 6px 8px 6px 6px #ebebeb;
+}
+.product-summary-section p {
+  font-family: "Hind Siliguri", sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.8;
+}
+.summary {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.summary.active {
+  background-color: #065644;
+
+  color: white;
+}
+.specification {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.specification.active {
+  background-color: #065644;
+  color: white;
+}
+.author {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.author.active {
+  background-color: #065644;
+  color: white;
+}
+.customer-review {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.customer-review.active {
+  background-color: #065644;
+  color: white;
+}
+/* car design */
+.card-area {
+  box-shadow: 6px 8px 6px 6px #ebebeb;
+  border-radius: 3px;
+}
+.book-inner img {
+  width: 130px !important;
+  height: 180px !important;
+}
+.book-body {
+  text-align: center;
+  font-family: "Hind Siliguri", sans-serif !important;
+}
+.book-body h6 {
+  font-size: 15px !important;
+}
+.book-body .writer-name {
+  font-family: "Hind Siliguri", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 0.5;
+}
+.tk-part {
+  line-height: 0;
+}
+.pre-tk {
+  color: rgb(174, 174, 174);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.now-tk {
+  color: #373737;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.my-button {
+  display: block;
+  margin: 20px;
+  text-decoration: none;
+}
+.my-button:hover {
+  text-decoration: none;
+  color: red !important;
+}
+
+.add-to-btn {
+  background-color: #12856a;
+  width: 180px;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 500;
+  position: absolute;
+  top: 150px;
+  margin-left: 9px;
+  font-size: 1rem;
+  visibility: hidden;
+  text-transform: uppercase;
+  font-family: "Hind Siliguri", sans-serif !important;
+}
+.add-to-btn2 {
+  background-color: #12856a;
+  width: 180px;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 500;
+  position: absolute;
+  top: 150px;
+  margin-left: 9px;
+  visibility: hidden;
+  text-transform: uppercase;
+  font-family: "Hind Siliguri", sans-serif !important;
+}
+.add-to-btn3 {
+  background-color: #12856a;
+  width: 180px;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 500;
+  position: absolute;
+  top: 150px;
+  margin-left: 0px;
+  visibility: hidden;
+  text-transform: uppercase;
+  font-family: "Hind Siliguri", sans-serif !important;
+}
+.add-to-btn a {
+  color: white;
+  text-decoration: none;
+}
+.add-to-btn2 a {
+  color: white;
+  text-decoration: none;
+}
+.add-to-btn3 a {
+  color: white;
+  text-decoration: none;
+}
+.add-to-btn a:hover {
+  color: white;
+}
+.add-to-btn2 a:hover {
+  color: white;
+}
+.add-to-btn3 a:hover {
+  color: white;
+}
+.details-button {
+  background-color: #065644;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 500;
+  visibility: hidden;
+  font-size: 1rem;
+}
+.single-card {
+  cursor: pointer;
+  position: relative;
+  z-index: 0 !important;
+  border: 1px solid rgb(225, 225, 225);
+}
+
+.single-card:hover .add-to-btn {
+  visibility: visible;
+  /* top: 160px; */
+}
+.single-card:hover .add-to-btn2 {
+  visibility: visible;
+  /* top: 160px; */
+}
+.single-card:hover .add-to-btn3 {
+  visibility: visible;
+  /* top: 160px; */
+}
+.single-card:hover .details-button {
+  visibility: visible;
+}
+.book-inner {
+  padding: 10px;
+}
+.book-body .book-title {
+  font-family: "Hind Siliguri", sans-serif !important;
+  width: 150px;
+  font-size: 1rem !important;
+}
+.book-inner:hover {
+  box-shadow: 3px 8px 8px 3px #f5f2f2;
+}
+
+.details-button a {
+  color: white;
+}
+.details-button a:hover {
+  color: white;
+}
+.details-button:hover {
+  background-color: #12856a;
+  width: 100%;
+
+  color: rgb(255, 255, 255);
+}
+.add-to-btn:hover {
+  background-color: #065644;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+.add-to-btn2:hover {
+  background-color: #12856a;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+.add-to-btn3:hover {
+  background-color: #12856a;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+/* animation */
+@keyframes slide {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+.single-card:hover .add-to-btn {
+  animation: slide 0.5s linear;
+}
+.single-card:hover .add-to-btn2 {
+  animation: slide 0.5s linear;
+}
+.single-card:hover .add-to-btn3 {
+  animation: slide 0.5s linear;
+}
+/* For Slider */
+.slick-track {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
