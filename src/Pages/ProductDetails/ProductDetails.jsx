@@ -21,7 +21,7 @@ const ProductDetails = () => {
 
   // Single Product Get
   useEffect(() => {
-    const url = `http://localhost:5000/api/product/${detailsId}`;
+    const url = `https://classic-server-jk7f.onrender.com/api/product/${detailsId}`;
     fetch(url, {
       method: "GET",
     })
@@ -33,11 +33,14 @@ const ProductDetails = () => {
   const { isLoading, refetch } = useQuery(
     "data",
     async () => {
-      const { data } = await axios.get("http://localhost:5000/api/user/me", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const { data } = await axios.get(
+        "https://classic-server-jk7f.onrender.com/api/user/me",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       return setUser(data?.data);
     },
     {
@@ -76,7 +79,10 @@ const ProductDetails = () => {
       };
       // console.log(product);
 
-      await axios.post("http://localhost:5000/api/cart", data);
+      await axios.post(
+        "https://classic-server-jk7f.onrender.com/api/cart",
+        data
+      );
       toast.success("Added To Cart");
     } catch (error) {
       return toast.warn(error.response.data.message);

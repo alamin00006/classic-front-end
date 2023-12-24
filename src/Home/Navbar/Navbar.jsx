@@ -21,11 +21,14 @@ const Navber = () => {
   const { isLoading, refetch } = useQuery(
     "data",
     async () => {
-      const { data } = await axios.get("http://localhost:5000/api/user/me", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const { data } = await axios.get(
+        "https://classic-server-jk7f.onrender.com/api/user/me",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       return setUser(data?.data);
     },
     {
@@ -34,7 +37,7 @@ const Navber = () => {
   );
   // Get Cart
   const { isLoadingOrder, refetchOrder } = useQuery([user, token], () =>
-    fetch(`http://localhost:5000/api/cart/${user?._id}`, {
+    fetch(`https://classic-server-jk7f.onrender.com/api/cart/${user?._id}`, {
       method: "GET",
     })
       .then((res) => res.json())

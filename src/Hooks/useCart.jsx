@@ -7,7 +7,7 @@ const useCart = () => {
   const token = localStorage.getItem("token");
   const [carts, setCarts] = useState([]);
   const { refetch, isLoading } = useQuery([user, token], () =>
-    fetch(`http://localhost:5000/api/cart/${user?._id}`, {
+    fetch(`https://classic-server-jk7f.onrender.com/api/cart/${user?._id}`, {
       method: "GET",
     })
       .then((res) => res.json())

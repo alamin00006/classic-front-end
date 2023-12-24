@@ -6,7 +6,7 @@ const useProduct = () => {
     isLoading,
     refetch,
   } = useQuery([], () =>
-    fetch("http://localhost:5000/api/product", {
+    fetch("https://classic-server-jk7f.onrender.com/api/product", {
       method: "GET",
     }).then((res) => res.json())
   );
