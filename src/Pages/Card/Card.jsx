@@ -13,14 +13,27 @@ const Card = ({ data }) => {
 
   return (
     <>
-      <div>
-        <img
-          src="https://www.aarong.com/media/catalog/product/1/2/1200000027917.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400"
-          alt=""
-        />
-        <p>Chocolate Torte Taaga Man Classic Fit T-Shirt</p>
-        <p>Tk 1200</p>
-        <button onClick={productDetails}>View Details</button>
+      <div className="border mt-3">
+        <div className="p-3">
+          <img
+            onClick={productDetails}
+            src={data?.sizeVariation?.[0]?.photos[0]}
+            alt=""
+            style={{ height: "400px", cursor: "pointer" }}
+          />
+          <p>Chocolate Torte Taaga Man Classic Fit T-Shirt</p>
+          <p>Tk 1200</p>
+          <button
+            onClick={productDetails}
+            className="text-white px-3"
+            style={{
+              backgroundColor: "#12856b",
+              border: "none",
+            }}
+          >
+            View Details
+          </button>
+        </div>
       </div>
     </>
   );

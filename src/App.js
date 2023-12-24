@@ -6,6 +6,7 @@ import Home from "./Home/Home";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import Navber from "./Home/Navbar/Navbar";
 import AllCard from "./Pages/Card/AllCard";
+import Profile from "./Pages/Profile/Profile";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/singUp" element={<SignUp></SignUp>}></Route>
+        <Route path="/profile" element={<Profile></Profile>}></Route>
         <Route path="/product-page" element={<AllCard></AllCard>}></Route>
         <Route
           path="/productDetails/:detailsId"
