@@ -50,7 +50,7 @@ const Login = () => {
 
     try {
       const data = await axios.post(
-        "https://book-collection-server.vercel.app/api/v1/user/login",
+        "https://classic-server-jk7f.onrender.com/api/user/login",
         { email: userInfo?.email, password: userInfo?.password }
       );
       localStorage.setItem("token", data.data?.data?.token);
